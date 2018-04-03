@@ -165,9 +165,11 @@ public class MeasurementTest {
   @Test
   public void shouldAdd2InchesAnd2Point5CM() {
     Measurement twoInches = new Measurement(2, Unit.INCH);
-    Measurement twoPoint5Inches = new Measurement(2.5, Unit.CENTIMETRES);
+    Measurement twoPoint5CM = new Measurement(2.5, Unit.CENTIMETRES);
     Measurement threeInches = new Measurement(3, Unit.INCH);
-    assertThat(threeInches, is(twoInches.add(twoPoint5Inches)));
+    Measurement result = twoInches.add(twoPoint5CM);
+    assertThat(threeInches, is(result));
+    assertThat(threeInches.toString(), is(result.toUnit(Unit.INCH).toString()));
   }
 
   @Test(expected = TypeMismatchException.class)
@@ -175,5 +177,22 @@ public class MeasurementTest {
     Measurement fiveKG = new Measurement(5, Unit.KILOGRAM);
     Measurement threeFeet = new Measurement(3, Unit.FEET);
     fiveKG.add(threeFeet);
+  }
+
+  @Test
+  public void shouldAdd1GallonAnd1Litre() {
+    Measurement oneGallon = new Measurement(1, Unit.GALLON);
+    Measurement oneLitre = new Measurement(1, Unit.LITRES);
+    Measurement fourPoint78Litres = new Measurement(4.78, Unit.LITRES);
+    Measurement result = oneGallon.add(oneLitre);
+    assertThat(result, is(fourPoint78Litres));
+    assertThat(fourPoint78Litres.toString(), is(result.toUnit(Unit.LITRES).toString()));
+  }
+
+  @Test(expected = TypeMismatchException.class)
+  public void shouldNotConvertUnitWhenTypeMismatch() {
+    Measurement oneGallon = new Measurement(1, Unit.GALLON);
+    Measurement oneLitre = new Measurement(1, Unit.LITRES);
+    oneGallon.add(oneLitre).toUnit(Unit.KILOGRAM);
   }
 }

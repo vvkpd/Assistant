@@ -5,15 +5,18 @@ import java.util.Objects;
 import static com.step.bootcamp.MeasurementType.*;
 
 public enum Unit {
-  FEET(30, LENGTH),INCH(2.5, LENGTH),CENTIMETRES(1, LENGTH),MILLIMETRES(0.1, LENGTH),
-  KILOGRAM(1000, MASS),TON(1000000, MASS),GRAM(1, MASS),
-  GALLON(3.78, VOLUME),LITRES(1, VOLUME);
+  FEET(Constants.A_FOOT_IN_CM, LENGTH),INCH(Constants.A_INCH_IN_CM, LENGTH),
+  CENTIMETRES(1, LENGTH),MILLIMETRES(Constants.A_MM_IN_CM, LENGTH),
+
+  KILOGRAM(Constants.A_KG_IN_G, MASS),TON(Constants.A_TON_IN_G, MASS),GRAM(1, MASS),
+
+  GALLON(Constants.A_GALLON_IN_LITRES, VOLUME),LITRES(1, VOLUME);
 
   private final double baseMultiplier;
   private final MeasurementType type;
 
-  public double toBaseUnit(double value) {
-    return this.baseMultiplier * value;
+  private double toBaseUnit(double value) {
+    return (double) Math.round(this.baseMultiplier * value * 1000) / 1000;
   }
 
   Unit(double ratio, MeasurementType type) {
@@ -25,11 +28,20 @@ public enum Unit {
     return unit.type == this.type;
   }
 
-  public double fromBaseUnit(double value){
-    return value / baseMultiplier;
+  public double toUnit(double value, Unit target){
+    return  toBaseUnit(value)/target.baseMultiplier;
   }
 
   public int hash(double value) {
     return Objects.hash(toBaseUnit(value), type);
+  }
+
+  private static class Constants {
+    static final int A_FOOT_IN_CM = 30;
+    static final double A_INCH_IN_CM = 2.5;
+    static final double A_MM_IN_CM = 0.1;
+    static final int A_KG_IN_G = 1000;
+    static final int A_TON_IN_G = 1000000;
+    static final double A_GALLON_IN_LITRES = 3.78;
   }
 }

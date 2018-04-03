@@ -1,7 +1,5 @@
 package com.step.bootcamp;
 
-import java.util.Objects;
-
 public class Measurement {
   private final double value;
   private final Unit unit;
@@ -12,12 +10,12 @@ public class Measurement {
   }
 
   @Override
-  public boolean equals(Object another) {
-    if (this == another) return true;
-    if (another == null || getClass() != another.getClass()) return false;
-    Measurement measurement = (Measurement) another;
+  public boolean equals(Object other) {
+    if (this == other) return true;
+    if (other == null || getClass() != other.getClass()) return false;
+    Measurement measurement = (Measurement) other;
     if(!measurement.unit.isSameType(unit)) return false;
-    return Double.compare(measurement.unit.toBaseUnit(measurement.value), unit.toBaseUnit(value)) == 0;
+    return Math.abs(measurement.unit.toUnit(measurement.value, unit) - value) <= 0.001;
   }
 
   @Override
@@ -35,9 +33,13 @@ public class Measurement {
 
   public Measurement add(Measurement other) {
     if(!unit.isSameType(other.unit)) throw new TypeMismatchException();
-    double sum = unit.toBaseUnit(value);
-    sum += other.unit.toBaseUnit(other.value);
-    double result = unit.fromBaseUnit(sum);
-    return new Measurement(result, unit);
+    double sum = value + other.unit.toUnit(other.value, unit);
+    return new Measurement(sum, unit);
+  }
+
+  public Measurement toUnit(Unit targetUnit) {
+    if(!unit.isSameType(targetUnit)) throw new TypeMismatchException();
+    double targetUnitValue = unit.toUnit(value, targetUnit);
+    return new Measurement(targetUnitValue, targetUnit);
   }
 }
