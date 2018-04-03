@@ -12,6 +12,7 @@ public class MeasurementTest {
     Measurement oneFoot = new Measurement(1.0, Unit.FEET);
     Measurement expectedFoot = new Measurement(1.0, Unit.FEET);
     assertThat(oneFoot,is(expectedFoot));
+    assertThat(oneFoot.hashCode(),is(expectedFoot.hashCode()));
   }
 
   @Test
@@ -19,6 +20,7 @@ public class MeasurementTest {
     Measurement oneFoot = new Measurement(1.0, Unit.FEET);
     Measurement twelveInches = new Measurement(12.0, Unit.INCH);
     assertThat(oneFoot,is(twelveInches));
+    assertThat(oneFoot.hashCode(),is(twelveInches.hashCode()));
   }
 
   @Test
@@ -75,6 +77,7 @@ public class MeasurementTest {
     Measurement oneG = new Measurement(1, Unit.GRAM);
     Measurement oneLitres = new Measurement(1, Unit.LITRES);
     assertThat(oneLitres, not(oneG));
+    assertThat(oneG.hashCode(),not(oneLitres.hashCode()));
   }
 
   @Test
@@ -117,5 +120,60 @@ public class MeasurementTest {
     Measurement oneCentimetre = new Measurement(1, Unit.CENTIMETRES);
     Measurement oneLitre = new Measurement(1, Unit.LITRES);
     assertThat(oneCentimetre,not(oneLitre) );
+  }
+
+  @Test
+  public void shouldAddTwoMeasurementOf2And2Inches() {
+    Measurement twoInches = new Measurement(2, Unit.INCH);
+    Measurement anotherTwoInches = new Measurement(2, Unit.INCH);
+    Measurement fourInches = new Measurement(4, Unit.INCH);
+    assertThat(fourInches, is(twoInches.add(anotherTwoInches)));
+  }
+
+  @Test
+  public void shouldAddTwoMeasurementOf5And3Inches() {
+    Measurement fiveInches = new Measurement(5, Unit.INCH);
+    Measurement threeInches = new Measurement(3, Unit.INCH);
+    Measurement eightInches = new Measurement(8, Unit.INCH);
+    assertThat(eightInches, is(fiveInches.add(threeInches)));
+  }
+
+  @Test
+  public void shouldAddTwoMeasurementOf5FeetAnd3Inches() {
+    Measurement fiveFeet = new Measurement(5, Unit.FEET);
+    Measurement threeInches = new Measurement(3, Unit.INCH);
+    Measurement sixty3Inches = new Measurement(63, Unit.INCH);
+    assertThat(sixty3Inches, is(fiveFeet.add(threeInches)));
+  }
+
+  @Test
+  public void shouldAdd5FeetAnd3InchesNotEqual6Feet() {
+    Measurement fiveFeet = new Measurement(5, Unit.FEET);
+    Measurement threeInches = new Measurement(3, Unit.INCH);
+    Measurement threeFeet = new Measurement(6, Unit.FEET);
+    assertThat(threeFeet, not(fiveFeet.add(threeInches)));
+  }
+
+  @Test
+  public void shouldAddTwoMeasurementOf5KGAnd300Grams() {
+    Measurement fiveKG = new Measurement(5, Unit.KILOGRAM);
+    Measurement three100Grams = new Measurement(300, Unit.GRAM);
+    Measurement fivePoint3KG = new Measurement(5.3, Unit.KILOGRAM);
+    assertThat(fivePoint3KG, is(fiveKG.add(three100Grams)));
+  }
+
+  @Test
+  public void shouldAdd2InchesAnd2Point5CM() {
+    Measurement twoInches = new Measurement(2, Unit.INCH);
+    Measurement twoPoint5Inches = new Measurement(2.5, Unit.CENTIMETRES);
+    Measurement threeInches = new Measurement(3, Unit.INCH);
+    assertThat(threeInches, is(twoInches.add(twoPoint5Inches)));
+  }
+
+  @Test(expected = TypeMismatchException.class)
+  public void shouldNotAdd5KGAnd3Feet() {
+    Measurement fiveKG = new Measurement(5, Unit.KILOGRAM);
+    Measurement threeFeet = new Measurement(3, Unit.FEET);
+    fiveKG.add(threeFeet);
   }
 }

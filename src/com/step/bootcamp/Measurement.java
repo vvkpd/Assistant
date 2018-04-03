@@ -30,6 +30,14 @@ public class Measurement {
 
   @Override
   public int hashCode() {
-    return Objects.hash(unit.toBaseUnit(value));
+    return unit.hash(value);
+  }
+
+  public Measurement add(Measurement other) {
+    if(!unit.isSameType(other.unit)) throw new TypeMismatchException();
+    double sum = unit.toBaseUnit(value);
+    sum += other.unit.toBaseUnit(other.value);
+    double result = unit.fromBaseUnit(sum);
+    return new Measurement(result, unit);
   }
 }

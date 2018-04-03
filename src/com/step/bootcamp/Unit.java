@@ -1,5 +1,7 @@
 package com.step.bootcamp;
 
+import java.util.Objects;
+
 import static com.step.bootcamp.MeasurementType.*;
 
 public enum Unit {
@@ -21,5 +23,13 @@ public enum Unit {
 
   public boolean isSameType(Unit unit) {
     return unit.type == this.type;
+  }
+
+  public double fromBaseUnit(double value){
+    return value / baseMultiplier;
+  }
+
+  public int hash(double value) {
+    return Objects.hash(toBaseUnit(value), type);
   }
 }
