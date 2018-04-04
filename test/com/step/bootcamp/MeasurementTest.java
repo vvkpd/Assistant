@@ -226,4 +226,19 @@ public class MeasurementTest {
     assertEquals(hundredF, anotherHundredF);
     assertEquals(hundredF.hashCode(), anotherHundredF.hashCode());
   }
+
+  @Test
+  public void hundredCShouldAddTo212FGive200C() {
+    Measurement twoHundred12F = new Measurement(212, Unit.FAHRENHEIT);
+    Measurement hundredC = new Measurement(100, Unit.CELSIUS);
+    Measurement twoHundredC = new Measurement(200,Unit.CELSIUS );
+    assertEquals(hundredC.add(twoHundred12F), twoHundredC);
+  }
+
+  @Test
+  public void hundredCShouldAddTo100F() {
+    Measurement hundredF = new Measurement(100, Unit.FAHRENHEIT);
+    Measurement hundredC = new Measurement(100, Unit.CELSIUS);
+    assertEquals(hundredC.add(hundredF).toUnit(Unit.CELSIUS), new Measurement(137.78, Unit.CELSIUS));
+  }
 }

@@ -15,7 +15,7 @@ public class Measurement {
     if (other == null || getClass() != other.getClass()) return false;
     Measurement measurement = (Measurement) other;
     if(!measurement.unit.isSameType(unit)) return false;
-    return Math.abs(measurement.unit.toUnit(measurement.value, unit) - value) <= 0.001;
+    return Math.abs(measurement.unit.toUnit(measurement.value, unit) - value) <= 0.01;
   }
 
   @Override
@@ -42,4 +42,6 @@ public class Measurement {
     double targetUnitValue = unit.toUnit(value, targetUnit);
     return new Measurement(targetUnitValue, targetUnit);
   }
+
+
 }
