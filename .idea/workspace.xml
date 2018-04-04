@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97442b9a-7075-4a4a-9002-e539444f91a7" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/test/com/step/bootcamp/ArithmeticMeasurementTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/step/bootcamp/MeasurementType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/bootcamp/MeasurementType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/step/bootcamp/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/bootcamp/Unit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/step/bootcamp/MeasurementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/bootcamp/MeasurementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/step/bootcamp/UnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/bootcamp/UnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/step/bootcamp/Measurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/bootcamp/Measurement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/step/bootcamp/MeasurementTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="Unit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Unit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="300">
+              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1250#1251#0" expanded="true" />
@@ -56,17 +55,30 @@
       <file leaf-file-name="Measurement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Measurement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="-69">
+              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnitTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArithmeticMeasurement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/ArithmeticMeasurement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="51" column="56" lean-forward="true" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
+              <folding>
+                <element signature="e#177#178#0" expanded="true" />
+                <element signature="e#205#206#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnitTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/UnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="441">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+              <caret line="84" column="3" lean-forward="true" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,11 +86,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeasurementTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ArithmeticMeasurementTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/ArithmeticMeasurementTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="169" column="62" lean-forward="true" selection-start-line="169" selection-start-column="62" selection-end-line="169" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MeasurementTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/MeasurementTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="219" column="3" lean-forward="true" selection-start-line="219" selection-start-column="3" selection-end-line="219" selection-end-column="3" />
+            <state relative-caret-position="152">
+              <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,6 +115,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TypeMismatchException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/TypeMismatchException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+              <folding>
+                <element signature="e#122#123#0" expanded="true" />
+                <element signature="e#186#187#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,11 +192,18 @@
         <option value="$PROJECT_DIR$/test/com/step/bootcamp/MassTest.java" />
         <option value="$PROJECT_DIR$/test/com/step/bootcamp/VolumeTest.java" />
         <option value="$PROJECT_DIR$/src/com/step/bootcamp/TypeMismatchException.java" />
-        <option value="$PROJECT_DIR$/src/com/step/bootcamp/Measurement.java" />
         <option value="$PROJECT_DIR$/src/com/step/bootcamp/MeasurementType.java" />
-        <option value="$PROJECT_DIR$/test/com/step/bootcamp/MeasurementTest.java" />
         <option value="$PROJECT_DIR$/src/com/step/bootcamp/Unit.java" />
         <option value="$PROJECT_DIR$/test/com/step/bootcamp/UnitTest.java" />
+        <option value="$PROJECT_DIR$/src/com/step/bootcamp/NonAddableMeasurement.java" />
+        <option value="$PROJECT_DIR$/test/com/step/bootcamp/AddableMeasurementTest.java" />
+        <option value="$PROJECT_DIR$/test/com/step/bootcamp/Measurement.java" />
+        <option value="$PROJECT_DIR$/test/com/step/bootcamp/ArithmeticMeasurement.java" />
+        <option value="$PROJECT_DIR$/test/com/step/bootcamp/MeasurementTest.java" />
+        <option value="$PROJECT_DIR$/src/com/step/bootcamp/AddableMeasurement.java" />
+        <option value="$PROJECT_DIR$/src/com/step/bootcamp/ArithmeticMeasurement.java" />
+        <option value="$PROJECT_DIR$/test/com/step/bootcamp/ArithmeticMeasurementTest.java" />
+        <option value="$PROJECT_DIR$/src/com/step/bootcamp/Measurement.java" />
       </list>
     </option>
   </component>
@@ -266,14 +310,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UnitTest.hundredCelsiusEquals212FahrenheitReverse">
+  <component name="RunManager" selected="JUnit.com.step.bootcamp in bootcamp">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="MeasurementTest.hundredCShouldEqualHundredCelsiusReverse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArithmeticMeasurementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.bootcamp.MeasurementTest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.step.bootcamp" />
+      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.ArithmeticMeasurementTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ArithmeticMeasurementTest.shouldAdd1GallonAnd1Litre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -284,8 +351,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.step.bootcamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.MeasurementTest" />
-      <option name="METHOD_NAME" value="hundredCShouldEqualHundredCelsiusReverse" />
+      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.ArithmeticMeasurementTest" />
+      <option name="METHOD_NAME" value="shouldAdd1GallonAnd1Litre" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -296,11 +363,11 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="MeasurementTest.hundredFShouldEqualHundredF" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeasurementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.bootcamp.*" />
+          <option name="PATTERN" value="com.step.bootcamp.MeasurementTest" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -308,54 +375,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.step.bootcamp" />
       <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.MeasurementTest" />
-      <option name="METHOD_NAME" value="hundredFShouldEqualHundredF" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MeasurementTest.twoHundred12FShouldEqualHundredCelsius" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.bootcamp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.step.bootcamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.MeasurementTest" />
-      <option name="METHOD_NAME" value="twoHundred12FShouldEqualHundredCelsius" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="UnitTest.hundredCelsiusEquals212FahrenheitReverse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.bootcamp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.step.bootcamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.UnitTest" />
-      <option name="METHOD_NAME" value="hundredCelsiusEquals212FahrenheitReverse" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -381,17 +402,40 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="com in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.step in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.*" />
+          <option name="PATTERN" value="com.step.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com" />
+      <option name="PACKAGE_NAME" value="com.step" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="com.step.bootcamp in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.bootcamp.MeasurementTest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.step.bootcamp" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -437,19 +481,19 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.MeasurementTest.twoHundred12FShouldEqualHundredCelsius" />
-      <item itemvalue="JUnit.MeasurementTest.hundredCShouldEqualHundredCelsiusReverse" />
-      <item itemvalue="JUnit.MeasurementTest.hundredFShouldEqualHundredF" />
-      <item itemvalue="JUnit.com in bootcamp" />
-      <item itemvalue="JUnit.UnitTest.hundredCelsiusEquals212FahrenheitReverse" />
+      <item itemvalue="JUnit.com.step.bootcamp in bootcamp" />
+      <item itemvalue="JUnit.ArithmeticMeasurementTest" />
+      <item itemvalue="JUnit.MeasurementTest" />
+      <item itemvalue="JUnit.com.step in bootcamp" />
+      <item itemvalue="JUnit.ArithmeticMeasurementTest.shouldAdd1GallonAnd1Litre" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UnitTest.hundredCelsiusEquals212FahrenheitReverse" />
-        <item itemvalue="JUnit.com in bootcamp" />
-        <item itemvalue="JUnit.MeasurementTest.twoHundred12FShouldEqualHundredCelsius" />
-        <item itemvalue="JUnit.MeasurementTest.hundredFShouldEqualHundredF" />
-        <item itemvalue="JUnit.MeasurementTest.hundredCShouldEqualHundredCelsiusReverse" />
+        <item itemvalue="JUnit.com.step.bootcamp in bootcamp" />
+        <item itemvalue="JUnit.ArithmeticMeasurementTest.shouldAdd1GallonAnd1Litre" />
+        <item itemvalue="JUnit.com.step in bootcamp" />
+        <item itemvalue="JUnit.MeasurementTest" />
+        <item itemvalue="JUnit.ArithmeticMeasurementTest" />
       </list>
     </recent_temporary>
   </component>
@@ -464,44 +508,44 @@
       <workItem from="1522293957991" duration="13966000" />
       <workItem from="1522384157265" duration="16345000" />
       <workItem from="1522644862707" duration="14379000" />
-      <workItem from="1522727407182" duration="25232000" />
+      <workItem from="1522727407182" duration="33943000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="com_step_bootcamp_in_bootcamp - 2018.04.04 at 11h 14m 27s.xml">
+    <history-entry file="com_step_bootcamp_in_bootcamp - 2018.04.04 at 15h 42m 52s.xml">
       <configuration name="com.step.bootcamp in bootcamp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MeasurementTest_twoHundred12FShouldEqualHundredCelsius - 2018.04.04 at 11h 17m 47s.xml">
-      <configuration name="MeasurementTest.twoHundred12FShouldEqualHundredCelsius" configurationId="JUnit" />
+    <history-entry file="com_step_bootcamp_in_bootcamp - 2018.04.04 at 15h 45m 28s.xml">
+      <configuration name="com.step.bootcamp in bootcamp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MeasurementTest_hundredCShouldEqualHundredCelsius - 2018.04.04 at 11h 18m 44s.xml">
-      <configuration name="MeasurementTest.hundredCShouldEqualHundredCelsius" configurationId="JUnit" />
+    <history-entry file="com_step_in_bootcamp - 2018.04.04 at 15h 45m 38s.xml">
+      <configuration name="com.step in bootcamp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MeasurementTest_hundredCShouldEqualHundredCelsiusReverse - 2018.04.04 at 11h 19m 17s.xml">
-      <configuration name="MeasurementTest.hundredCShouldEqualHundredCelsiusReverse" configurationId="JUnit" />
+    <history-entry file="com_step_bootcamp_in_bootcamp - 2018.04.04 at 15h 54m 16s.xml">
+      <configuration name="com.step.bootcamp in bootcamp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MeasurementTest_hundredCShouldEqualHundredCelsiusReverse - 2018.04.04 at 11h 23m 31s.xml">
-      <configuration name="MeasurementTest.hundredCShouldEqualHundredCelsiusReverse" configurationId="JUnit" />
+    <history-entry file="ArithmeticMeasurementTest_shouldAdd1GallonAnd1Litre - 2018.04.04 at 15h 55m 35s.xml">
+      <configuration name="ArithmeticMeasurementTest.shouldAdd1GallonAnd1Litre" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MeasurementTest_hundredFShouldEqualHundredF - 2018.04.04 at 11h 23m 37s.xml">
-      <configuration name="MeasurementTest.hundredFShouldEqualHundredF" configurationId="JUnit" />
+    <history-entry file="ArithmeticMeasurementTest_shouldAdd1GallonAnd1Litre - 2018.04.04 at 15h 55m 54s.xml">
+      <configuration name="ArithmeticMeasurementTest.shouldAdd1GallonAnd1Litre" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MeasurementTest_hundredFShouldEqualHundredF - 2018.04.04 at 11h 26m 25s.xml">
-      <configuration name="MeasurementTest.hundredFShouldEqualHundredF" configurationId="JUnit" />
+    <history-entry file="ArithmeticMeasurementTest_shouldAdd1GallonAnd1Litre - 2018.04.04 at 15h 56m 08s.xml">
+      <configuration name="ArithmeticMeasurementTest.shouldAdd1GallonAnd1Litre" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MeasurementTest_twoHundred12FShouldEqualHundredCelsius - 2018.04.04 at 11h 27m 00s.xml">
-      <configuration name="MeasurementTest.twoHundred12FShouldEqualHundredCelsius" configurationId="JUnit" />
+    <history-entry file="ArithmeticMeasurementTest_shouldAdd1GallonAnd1Litre - 2018.04.04 at 15h 57m 39s.xml">
+      <configuration name="ArithmeticMeasurementTest.shouldAdd1GallonAnd1Litre" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_in_bootcamp - 2018.04.04 at 11h 29m 52s.xml">
-      <configuration name="com in bootcamp" configurationId="JUnit" />
+    <history-entry file="com_step_bootcamp_in_bootcamp - 2018.04.04 at 16h 00m 58s.xml">
+      <configuration name="com.step.bootcamp in bootcamp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTest_hundredCelsiusEquals212FahrenheitReverse - 2018.04.04 at 11h 41m 52s.xml">
-      <configuration name="UnitTest.hundredCelsiusEquals212FahrenheitReverse" configurationId="JUnit" />
+    <history-entry file="com_step_bootcamp_in_bootcamp - 2018.04.04 at 16h 08m 05s.xml">
+      <configuration name="com.step.bootcamp in bootcamp" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76517000" />
+    <option name="totallyTimeSpent" value="85228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="976" extended-state="6" />
@@ -515,10 +559,10 @@
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32992035" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2901024" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2901024" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18253969" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18253969" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32764506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -623,9 +667,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Rectangle.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Square.java" />
-    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/RectangleTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Rectangle.java" />
     <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/SquareTest.java" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -702,17 +743,6 @@
     <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/LengthTest.java" />
     <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/VolumeTest.java" />
     <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/MassTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/TypeMismatchException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
-          <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#139#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/lang/Double.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -720,24 +750,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/MeasurementType.java">
+    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/UnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Measurement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        <state relative-caret-position="441">
+          <caret line="84" column="3" lean-forward="true" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Unit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="300">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1250#1251#0" expanded="true" />
@@ -748,20 +774,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/MeasurementTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/NonAddableMeasurement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="219" column="3" lean-forward="true" selection-start-line="219" selection-start-column="3" selection-end-line="219" selection-end-column="3" />
+        <state relative-caret-position="221">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/MeasurementType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/TypeMismatchException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+          <folding>
+            <element signature="e#122#123#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/ArithmeticMeasurementTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="169" column="62" lean-forward="true" selection-start-line="169" selection-start-column="62" selection-end-line="169" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/UnitTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Measurement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="-69">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/ArithmeticMeasurement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="51" column="56" lean-forward="true" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
+          <folding>
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/MeasurementTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

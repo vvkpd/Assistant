@@ -1,12 +1,20 @@
 package com.step.bootcamp;
 
 public class Measurement {
-  private final double value;
-  private final Unit unit;
+  protected final double value;
+  protected final Unit unit;
 
-  public Measurement(double value, Unit unit) {
+  protected Measurement(double value, Unit unit) {
     this.value = value;
     this.unit = unit;
+  }
+
+  public static Measurement inCelsius(double celsius) {
+    return new Measurement(celsius,Unit.CELSIUS);
+  }
+
+  public static Measurement inFahrenheit(double fahrenheits) {
+    return new Measurement(fahrenheits,Unit.FAHRENHEIT);
   }
 
   @Override
@@ -31,17 +39,9 @@ public class Measurement {
     return unit.hash(value);
   }
 
-  public Measurement add(Measurement other) {
-    if(!unit.isSameType(other.unit)) throw new TypeMismatchException();
-    double sum = value + other.unit.toUnit(other.value, unit);
-    return new Measurement(sum, unit);
-  }
-
   public Measurement toUnit(Unit targetUnit) {
     if(!unit.isSameType(targetUnit)) throw new TypeMismatchException();
     double targetUnitValue = unit.toUnit(value, targetUnit);
     return new Measurement(targetUnitValue, targetUnit);
   }
-
-
 }
