@@ -10,18 +10,30 @@ public enum Unit {
 
   KILOGRAM(Constants.A_KG_IN_G, MASS),TON(Constants.A_TON_IN_G, MASS),GRAM(1, MASS),
 
-  GALLON(Constants.A_GALLON_IN_LITRES, VOLUME),LITRES(1, VOLUME);
+  GALLON(Constants.A_GALLON_IN_LITRES, VOLUME),LITRES(1, VOLUME),
+
+  CELSIUS(1, MeasurementType.TEMPERATURE,0),
+  FAHRENHEIT(5.0/9.0,MeasurementType.TEMPERATURE,32);
+
 
   private final double baseMultiplier;
   private final MeasurementType type;
+  private final double offset;
 
-  private double toBaseUnit(double value) {
-    return (double) Math.round(this.baseMultiplier * value * 1000) / 1000;
+  double toBaseUnit(double value) {
+    return (double) Math.round(this.baseMultiplier * (value - offset) * 1000) / 1000;
   }
 
   Unit(double ratio, MeasurementType type) {
     this.baseMultiplier = ratio;
     this.type = type;
+    this.offset = 0;
+  }
+
+  Unit(double ratio, MeasurementType type, double offset) {
+    this.baseMultiplier = ratio;
+    this.type = type;
+    this.offset = offset;
   }
 
   public boolean isSameType(Unit unit) {
@@ -29,7 +41,7 @@ public enum Unit {
   }
 
   public double toUnit(double value, Unit target){
-    return  toBaseUnit(value)/target.baseMultiplier;
+    return toBaseUnit(value)/target.baseMultiplier  + target.offset;
   }
 
   public int hash(double value) {

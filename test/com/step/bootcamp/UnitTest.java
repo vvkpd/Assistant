@@ -69,4 +69,18 @@ public class UnitTest{
     double anotherOneLitre = 1.0;
     assertThat(LITRES.toUnit(oneLitre,LITRES),is(anotherOneLitre) );
   }
+
+  @Test
+  public void hundredCEquals212F() {
+    double hundredC = 100;
+    double twoHundred12F = 212;
+    assertThat(CELSIUS.toUnit(hundredC,FAHRENHEIT), is(twoHundred12F));
+  }
+
+  @Test
+  public void hundredCelsiusEquals212FahrenheitReverse() {
+    double hundredC = 100;
+    double twoHundred12F = 212;
+    assertThat(FAHRENHEIT.toUnit(twoHundred12F,CELSIUS), is(hundredC));
+  }
 }

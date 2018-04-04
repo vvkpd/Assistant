@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsNot.not;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 public class MeasurementTest {
@@ -194,5 +195,35 @@ public class MeasurementTest {
     Measurement oneGallon = new Measurement(1, Unit.GALLON);
     Measurement oneLitre = new Measurement(1, Unit.LITRES);
     oneGallon.add(oneLitre).toUnit(Unit.KILOGRAM);
+  }
+
+  @Test
+  public void hundredCShouldEqualTo212F() {
+    Measurement twoHundred12F = new Measurement(212, Unit.FAHRENHEIT);
+    Measurement hundredC = new Measurement(100, Unit.CELSIUS);
+    assertEquals(twoHundred12F, hundredC);
+  }
+
+  @Test
+  public void twoHundred12FShouldEqualHundredCelsius() {
+    Measurement twoHundred12F = new Measurement(212, Unit.FAHRENHEIT);
+    Measurement hundredC = new Measurement(100, Unit.CELSIUS);
+    assertEquals(hundredC, twoHundred12F);
+    assertEquals(hundredC.hashCode(), twoHundred12F.hashCode());
+  }
+
+  @Test
+  public void hundredCShouldEqualHundredCelsius() {
+    Measurement hundredC = new Measurement(100, Unit.CELSIUS);
+    Measurement anotherHundredC = new Measurement(100, Unit.CELSIUS);
+    assertEquals(anotherHundredC, hundredC);
+  }
+
+  @Test
+  public void hundredFShouldEqualHundredF() {
+    Measurement hundredF = new Measurement(100, Unit.FAHRENHEIT);
+    Measurement anotherHundredF = new Measurement(100, Unit.FAHRENHEIT);
+    assertEquals(hundredF, anotherHundredF);
+    assertEquals(hundredF.hashCode(), anotherHundredF.hashCode());
   }
 }
