@@ -1,33 +1,36 @@
 package com.step.bootcamp;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class ParkingLot {
-  private final ArrayList<Car> parking;
+  private final HashMap<Object, Vehicle> vehicles;
+  private final int capacity;
 
-  public ParkingLot() {
-    parking = new ArrayList<>();
+  public ParkingLot(int capacity) {
+    this.capacity = capacity;
+    vehicles = new HashMap<>();
   }
 
-  public boolean park(Car car) {
-    parking.add(car);
-    return true;
+  public Object park(Vehicle vehicle) throws CannotParkException {
+    if(has(vehicle)) throw new CannotParkException("Car is already parked");
+    if(isFull()) throw new CannotParkException("Parking is full");
+    Object token = vehicle.hashCode();
+    vehicles.put(token, vehicle);
+    return token;
   }
 
-  public boolean hasCar(int number) {
-    for (Car car : parking) {
-      if(car.hasNumber(number)) return true;
-    }
-    return false;
+  private boolean has(Vehicle vehicle) {
+    return vehicles.containsValue(vehicle);
   }
 
-  public Car checkout(int number) {
-    for (Car car : parking) {
-      if(car.hasNumber(number)){
-        parking.remove(car);
-        return car;
-      }
-    }
-    throw new CarNotFoundException();
+  public Vehicle checkoutFor(Object token) throws VehicleNotFoundException {
+    Vehicle vehicle = vehicles.remove(token);
+    if(vehicle == null)
+      throw new VehicleNotFoundException();
+    return vehicle;
+  }
+
+  public boolean isFull() {
+    return vehicles.size() == capacity;
   }
 }
