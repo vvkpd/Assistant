@@ -51,36 +51,4 @@ public class AttendantTest {
     Object token = attendant.park(car);
     assertEquals(attendant.checkoutFor(token), car);
   }
-
-
-  @Test
-  public void shouldNotifyEveryOneWhenALotIsFull() throws CannotParkException {
-    Attendant attendant = new Attendant(new Assistant());
-    ArrayList<String> messages = new ArrayList<>();
-    attendant.addListener(msg -> {
-      messages.add(msg);
-      return "ack";
-    });
-    attendant.add(new ParkingLot(1));
-    attendant.add(new ParkingLot(1));
-    attendant.park(new Car());
-    assertThat(messages, hasItem("Full"));
-    assertThat(messages.size(), is(1));
-  }
-
-  @Test
-  public void shouldNotifyEveryOneWhenSpaceIsAvailable() throws CannotParkException, VehicleNotFoundException {
-    Attendant attendant = new Attendant(new Assistant());
-    ArrayList<String> messages = new ArrayList<>();
-    attendant.addListener(msg -> {
-      messages.add(msg);
-      return "ack";
-    });
-
-    attendant.add(new ParkingLot(1));
-    Object token = attendant.park(new Car());
-    attendant.checkoutFor(token);
-    assertThat(messages, hasItem("Space Available"));
-    assertThat(messages.size(), is(2));
-  }
 }

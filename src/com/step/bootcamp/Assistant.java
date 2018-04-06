@@ -1,7 +1,13 @@
 package com.step.bootcamp;
 
-public class Assistant {
-  public void updateDisplay(String msg){
-    System.out.println(msg);
+public class Assistant implements Listener{
+  @Override
+  public void full() {
+    System.out.println("Full");
+  }
+
+  @Override
+  public void spaceAvailable() {
+    System.out.println("Space Available");
   }
 }
