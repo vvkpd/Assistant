@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97442b9a-7075-4a4a-9002-e539444f91a7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/step/bootcamp/ParkingLotHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/bootcamp/ParkingLotHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/step/bootcamp/ParkingLotHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/bootcamp/Attendant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/bootcamp/AttendantTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,24 +38,8 @@
       <file leaf-file-name="ParkingLotTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#1451#1452#0" expanded="true" />
-                <element signature="e#1492#1493#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParkingLotHandlerTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotHandlerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+            <state relative-caret-position="653">
+              <caret line="68" column="3" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,57 +47,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="Attendant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Attendant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="4" selection-start-column="4" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParkingLotHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/ParkingLotHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+            <state relative-caret-position="346">
+              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
               <folding>
-                <element signature="e#119#120#0" expanded="true" />
-                <element signature="e#160#161#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#454#455#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#1367#1368#0" expanded="true" />
+                <element signature="e#1400#1401#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VehicleNotFoundException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/VehicleNotFoundException.java">
+      <file leaf-file-name="Assistant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Assistant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CannotParkException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/CannotParkException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+            <state relative-caret-position="85">
+              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
               <folding>
-                <element signature="e#147#148#0" expanded="true" />
-                <element signature="e#181#182#0" expanded="true" />
+                <element signature="e#92#93#0" expanded="true" />
+                <element signature="e#122#123#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vehicle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Vehicle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -120,13 +78,25 @@
       <file leaf-file-name="ParkingLot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/ParkingLot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="15" column="64" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="64" />
+            <state relative-caret-position="289">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding>
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#949#950#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttendantTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/AttendantTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,10 +107,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit4 Test Class" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -166,10 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/com/step/bootcamp/RectangleTest.java" />
-        <option value="$PROJECT_DIR$/test/com/step/bootcamp/SquareTest.java" />
-        <option value="$PROJECT_DIR$/src/com/step/bootcamp/Rectangle.java" />
-        <option value="$PROJECT_DIR$/test/com/step/bootcamp/OccuranceTest.java" />
         <option value="$PROJECT_DIR$/test/com/step/bootcamp/OccurrenceTest.java" />
         <option value="$PROJECT_DIR$/src/com/step/bootcamp/Probability.java" />
         <option value="$PROJECT_DIR$/test/com/step/bootcamp/ProbabilityTest.java" />
@@ -212,11 +178,15 @@
         <option value="$PROJECT_DIR$/src/com/step/bootcamp/AlreadyParkedException.java" />
         <option value="$PROJECT_DIR$/src/com/step/bootcamp/VehicleNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/com/step/bootcamp/CannotParkException.java" />
-        <option value="$PROJECT_DIR$/src/com/step/bootcamp/ParkingLot.java" />
-        <option value="$PROJECT_DIR$/test/com/step/bootcamp/AttendantTest.java" />
-        <option value="$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotTest.java" />
-        <option value="$PROJECT_DIR$/src/com/step/bootcamp/ParkingLotHandler.java" />
         <option value="$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/com/step/bootcamp/ParkingLotHandler.java" />
+        <option value="$PROJECT_DIR$/test/com/step/bootcamp/AssistantTest.java" />
+        <option value="$PROJECT_DIR$/src/com/step/bootcamp/ParkingLot.java" />
+        <option value="$PROJECT_DIR$/src/com/step/bootcamp/Assistant.java" />
+        <option value="$PROJECT_DIR$/src/com/step/bootcamp/Listener.java" />
+        <option value="$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotTest.java" />
+        <option value="$PROJECT_DIR$/src/com/step/bootcamp/Attendant.java" />
+        <option value="$PROJECT_DIR$/test/com/step/bootcamp/AttendantTest.java" />
       </list>
     </option>
   </component>
@@ -289,6 +259,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -323,14 +294,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParkingLotHandlerTest.shouldBeAbleToParkCarWhenNoLotAreAdded">
+  <component name="RunManager" selected="JUnit.AttendantTest.shouldNotifyEveryOneWhenSpaceIsAvailable">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="ParkingLotHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AttendantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -341,7 +312,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.step.bootcamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.ParkingLotHandlerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.AttendantTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -353,7 +324,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ParkingLotHandlerTest.shouldBeAbleToParkCarWhenNoLotAreAdded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AttendantTest.shouldBeAbleToParkCarWhenOneLotIsFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -364,30 +335,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.step.bootcamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.ParkingLotHandlerTest" />
-      <option name="METHOD_NAME" value="shouldBeAbleToParkCarWhenNoLotAreAdded" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ParkingLotHandlerTest.shouldBeAbleToParkCarWhenOneLotIsFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.bootcamp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.step.bootcamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.ParkingLotHandlerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.AttendantTest" />
       <option name="METHOD_NAME" value="shouldBeAbleToParkCarWhenOneLotIsFull" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -399,7 +347,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ParkingLotHandlerTest.shouldCheckoutCar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AttendantTest.shouldNotifyEveryOneWhenALotIsFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -410,8 +358,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.step.bootcamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.ParkingLotHandlerTest" />
-      <option name="METHOD_NAME" value="shouldCheckoutCar" />
+      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.AttendantTest" />
+      <option name="METHOD_NAME" value="shouldNotifyEveryOneWhenALotIsFull" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -422,7 +370,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ParkingLotHandlerTest.shouldThrowExceptionWhenAllLotsAreFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AttendantTest.shouldNotifyEveryOneWhenSpaceIsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -433,8 +381,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.step.bootcamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.ParkingLotHandlerTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenAllLotsAreFull" />
+      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.AttendantTest" />
+      <option name="METHOD_NAME" value="shouldNotifyEveryOneWhenSpaceIsAvailable" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -452,6 +400,29 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="com.step.bootcamp in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.bootcamp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.step.bootcamp" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -494,19 +465,19 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ParkingLotHandlerTest.shouldBeAbleToParkCarWhenOneLotIsFull" />
-      <item itemvalue="JUnit.ParkingLotHandlerTest" />
-      <item itemvalue="JUnit.ParkingLotHandlerTest.shouldThrowExceptionWhenAllLotsAreFull" />
-      <item itemvalue="JUnit.ParkingLotHandlerTest.shouldCheckoutCar" />
-      <item itemvalue="JUnit.ParkingLotHandlerTest.shouldBeAbleToParkCarWhenNoLotAreAdded" />
+      <item itemvalue="JUnit.AttendantTest" />
+      <item itemvalue="JUnit.AttendantTest.shouldBeAbleToParkCarWhenOneLotIsFull" />
+      <item itemvalue="JUnit.AttendantTest.shouldNotifyEveryOneWhenALotIsFull" />
+      <item itemvalue="JUnit.com.step.bootcamp in bootcamp" />
+      <item itemvalue="JUnit.AttendantTest.shouldNotifyEveryOneWhenSpaceIsAvailable" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParkingLotHandlerTest.shouldBeAbleToParkCarWhenNoLotAreAdded" />
-        <item itemvalue="JUnit.ParkingLotHandlerTest" />
-        <item itemvalue="JUnit.ParkingLotHandlerTest.shouldCheckoutCar" />
-        <item itemvalue="JUnit.ParkingLotHandlerTest.shouldThrowExceptionWhenAllLotsAreFull" />
-        <item itemvalue="JUnit.ParkingLotHandlerTest.shouldBeAbleToParkCarWhenOneLotIsFull" />
+        <item itemvalue="JUnit.AttendantTest.shouldNotifyEveryOneWhenSpaceIsAvailable" />
+        <item itemvalue="JUnit.com.step.bootcamp in bootcamp" />
+        <item itemvalue="JUnit.AttendantTest.shouldNotifyEveryOneWhenALotIsFull" />
+        <item itemvalue="JUnit.AttendantTest.shouldBeAbleToParkCarWhenOneLotIsFull" />
+        <item itemvalue="JUnit.AttendantTest" />
       </list>
     </recent_temporary>
   </component>
@@ -526,39 +497,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="com_step_bootcamp_in_bootcamp - 2018.04.05 at 15h 44m 07s.xml">
+    <history-entry file="AttendantTest_shouldNotifyEveryOneWhenALotIsFull - 2018.04.06 at 12h 30m 38s.xml">
+      <configuration name="AttendantTest.shouldNotifyEveryOneWhenALotIsFull" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AttendantTest_shouldNotifyEveryOneWhenALotIsFull - 2018.04.06 at 12h 31m 34s.xml">
+      <configuration name="AttendantTest.shouldNotifyEveryOneWhenALotIsFull" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_step_bootcamp_in_bootcamp - 2018.04.06 at 12h 31m 48s.xml">
       <configuration name="com.step.bootcamp in bootcamp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingLotHandlerTest_shouldBeAbleToParkCar - 2018.04.05 at 16h 35m 44s.xml">
-      <configuration name="ParkingLotHandlerTest.shouldBeAbleToParkCar" configurationId="JUnit" />
+    <history-entry file="com_step_bootcamp_in_bootcamp - 2018.04.06 at 12h 32m 30s.xml">
+      <configuration name="com.step.bootcamp in bootcamp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingLotHandlerTest_shouldBeAbleToParkCarWhenOneLotIsFull - 2018.04.05 at 16h 42m 11s.xml">
-      <configuration name="ParkingLotHandlerTest.shouldBeAbleToParkCarWhenOneLotIsFull" configurationId="JUnit" />
+    <history-entry file="AttendantTest_shouldNotifyEveryOneWhenALotIsFull - 2018.04.06 at 12h 32m 49s.xml">
+      <configuration name="AttendantTest.shouldNotifyEveryOneWhenALotIsFull" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingLotHandlerTest_shouldBeAbleToParkCarWhenOneLotIsFull - 2018.04.05 at 16h 44m 07s.xml">
-      <configuration name="ParkingLotHandlerTest.shouldBeAbleToParkCarWhenOneLotIsFull" configurationId="JUnit" />
+    <history-entry file="AttendantTest_shouldNotifyEveryOneWhenALotIsFull - 2018.04.06 at 12h 43m 50s.xml">
+      <configuration name="AttendantTest.shouldNotifyEveryOneWhenALotIsFull" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingLotHandlerTest - 2018.04.05 at 16h 45m 29s.xml">
-      <configuration name="ParkingLotHandlerTest" configurationId="JUnit" />
+    <history-entry file="AttendantTest_shouldNotifyEveryOneWhenALotIsFull - 2018.04.06 at 12h 44m 46s.xml">
+      <configuration name="AttendantTest.shouldNotifyEveryOneWhenALotIsFull" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingLotHandlerTest_shouldThrowExceptionWhenAllLotsAreFull - 2018.04.05 at 16h 57m 23s.xml">
-      <configuration name="ParkingLotHandlerTest.shouldThrowExceptionWhenAllLotsAreFull" configurationId="JUnit" />
+    <history-entry file="AttendantTest_shouldNotifyEveryOneWhenALotIsFull - 2018.04.06 at 12h 45m 54s.xml">
+      <configuration name="AttendantTest.shouldNotifyEveryOneWhenALotIsFull" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingLotHandlerTest_shouldThrowExceptionWhenAllLotsAreFull - 2018.04.05 at 16h 57m 39s.xml">
-      <configuration name="ParkingLotHandlerTest.shouldThrowExceptionWhenAllLotsAreFull" configurationId="JUnit" />
+    <history-entry file="com_step_bootcamp_in_bootcamp - 2018.04.06 at 12h 58m 27s.xml">
+      <configuration name="com.step.bootcamp in bootcamp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingLotHandlerTest_shouldCheckoutCar - 2018.04.05 at 17h 05m 35s.xml">
-      <configuration name="ParkingLotHandlerTest.shouldCheckoutCar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParkingLotHandlerTest - 2018.04.05 at 17h 05m 39s.xml">
-      <configuration name="ParkingLotHandlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParkingLotHandlerTest - 2018.04.05 at 17h 14m 58s.xml">
-      <configuration name="ParkingLotHandlerTest" configurationId="JUnit" />
+    <history-entry file="AttendantTest_shouldNotifyEveryOneWhenSpaceIsAvailable - 2018.04.06 at 12h 58m 54s.xml">
+      <configuration name="AttendantTest.shouldNotifyEveryOneWhenSpaceIsAvailable" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102271000" />
+    <option name="totallyTimeSpent" value="107875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="976" extended-state="6" />
@@ -698,9 +669,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/SquareTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Rectangle.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Square.java" />
     <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/RectangleTest.java" />
     <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Rectangle.java" />
     <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/SquareTest.java" />
@@ -756,30 +724,9 @@
     <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/MeasurementTest.java" />
     <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/UnitTest.java" />
     <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/ArithmeticMeasurement.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Bike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/CarTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Car.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Bike.java" />
+    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/CarTest.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -814,17 +761,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/AlreadyParkedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding>
-            <element signature="e#125#126#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/AlreadyParkedException.java" />
     <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/VehicleNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -832,13 +769,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Attendant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Attendant.java" />
     <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/CannotParkException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -857,20 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#1451#1452#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Vehicle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -878,36 +795,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/AssistantTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/ParkingLot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="15" column="64" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="64" />
-          <folding>
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/ParkingLotHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-          <folding>
-            <element signature="e#119#120#0" expanded="true" />
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#949#950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Assistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding>
+            <element signature="e#92#93#0" expanded="true" />
+            <element signature="e#122#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Listener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Attendant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+          <folding>
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+            <element signature="e#1400#1401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="68" column="3" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/AttendantTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
