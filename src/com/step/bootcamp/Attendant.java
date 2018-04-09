@@ -12,8 +12,6 @@ public class Attendant implements Listener{
   }
 
   public void add(ParkingLot parkingLot) {
-    parkingLot.addListener(assistant);
-    parkingLot.addListener(this);
     parkingLots.add(parkingLot);
   }
 
@@ -25,7 +23,6 @@ public class Attendant implements Listener{
     }
     throw new CannotParkException("Parking is full");
   }
-
 
   public Vehicle checkoutFor(Object token) throws VehicleNotFoundException {
     for (ParkingLot parkingLot : parkingLots) {

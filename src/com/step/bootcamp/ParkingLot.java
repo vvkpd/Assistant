@@ -1,21 +1,16 @@
 package com.step.bootcamp;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 class ParkingLot {
   private final HashMap<Object, Vehicle> vehicles;
   private final int capacity;
-  private final ArrayList<Listener> listeners;
+  private final Event subscribers;
 
-  ParkingLot(int capacity) {
+  ParkingLot(int capacity, Event subscribers) {
     this.capacity = capacity;
     vehicles = new HashMap<>();
-    listeners = new ArrayList<>();
-  }
-
-  public void addListener(Listener listener) {
-    listeners.add(listener);
+    this.subscribers = subscribers;
   }
 
   public Object park(Vehicle vehicle) throws CannotParkException {
@@ -23,14 +18,8 @@ class ParkingLot {
     if(isFull()) throw new CannotParkException("Parking is full");
     Object token = vehicle.hashCode();
     vehicles.put(token, vehicle);
-    if(isFull()) broadcastFull();
+    if(isFull()) subscribers.broadcastFull();
     return token;
-  }
-
-  private void broadcastFull() {
-    for (Listener listener : listeners) {
-      listener.full();
-    }
   }
 
   private boolean has(Vehicle vehicle) {
@@ -43,17 +32,12 @@ class ParkingLot {
     if(vehicle == null){
       throw new VehicleNotFoundException();
     }
-    if(wasFull) broadcastSpaceAvailable();
+    if(wasFull) subscribers.broadcastSpaceAvailable();
     return vehicle;
-  }
-
-  private void broadcastSpaceAvailable() {
-    for (Listener listener : listeners) {
-      listener.spaceAvailable();
-    }
   }
 
   public boolean isFull() {
     return vehicles.size() == capacity;
   }
+
 }

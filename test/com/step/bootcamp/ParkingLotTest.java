@@ -11,12 +11,14 @@ public class ParkingLotTest {
   private ParkingLot parkingLot;
   private Car car;
   private Listener owner;
+  private Event subscribers;
 
   private class Car implements Vehicle {}
 
   @Before
   public void setUp() {
-    parkingLot = new ParkingLot(2);
+    subscribers = new Event();
+    parkingLot = new ParkingLot(2, subscribers);
     car = new Car();
     owner = mock(Listener.class);
   }
@@ -72,7 +74,7 @@ public class ParkingLotTest {
 
   @Test
   public void shouldNotifyEveryOneWhenALotIsFull() throws CannotParkException {
-    parkingLot.addListener(owner);
+    subscribers.subscribe(owner);
     parkingLot.park(car);
     parkingLot.park(new Car());
     verify(owner).full();
@@ -80,7 +82,7 @@ public class ParkingLotTest {
 
   @Test
   public void shouldNotifyEveryOneWhenSpaceIsAvailable() throws CannotParkException, VehicleNotFoundException {
-    parkingLot.addListener(owner);
+    subscribers.subscribe(owner);
     parkingLot.park(car);
     Object token = parkingLot.park(new Car());
     parkingLot.checkoutFor(token);
@@ -89,11 +91,24 @@ public class ParkingLotTest {
 
   @Test
   public void shouldOnlyNotifyOnceWhenSpaceIsAvailable() throws CannotParkException, VehicleNotFoundException {
-    parkingLot.addListener(owner);
+    subscribers.subscribe(owner);
     Object token = parkingLot.park(car);
     Object token2 = parkingLot.park(new Car());
     parkingLot.checkoutFor(token);
     parkingLot.checkoutFor(token2);
     verify(owner, times(1)).spaceAvailable();
+  }
+
+  @Test
+  public void shouldBeAbleToUnsubscribe() throws CannotParkException {
+    Listener cityCouncil = mock(Listener.class);
+    subscribers.subscribe(owner);
+    subscribers.subscribe(cityCouncil);
+    parkingLot.park(car);
+
+    subscribers.unsubscribe(cityCouncil);
+    parkingLot.park(new Car());
+    verify(owner, times(1)).full();
+    verify(cityCouncil, never()).full();
   }
 }
