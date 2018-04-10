@@ -67,4 +67,10 @@ public class ParkingLotTest {
     parkingLot.park(new Car());
     parkingLot.park(new Car());
   }
+
+  @Test
+  public void shouldReturnDifferenceBetweenCapacity() {
+    assertEquals(parkingLot.compare(new ParkingLot(3)), -1);
+    assertEquals(parkingLot.compare(new ParkingLot(2)), 0);
+  }
 }

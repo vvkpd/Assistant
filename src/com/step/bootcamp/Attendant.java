@@ -10,7 +10,14 @@ public class Attendant {
   }
 
   public void add(ParkingLot parkingLot) {
-    parkingLots.add(parkingLot);
+    int index = parkingLots.size();
+    for (ParkingLot lot : parkingLots) {
+     if(lot.compare(parkingLot) <= 0){
+       index = parkingLots.indexOf(lot);
+       break;
+     }
+    }
+    parkingLots.add(index, parkingLot);
   }
 
   public Object park(Vehicle vehicle) throws CannotParkException {
