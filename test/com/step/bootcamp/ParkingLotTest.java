@@ -14,7 +14,7 @@ public class ParkingLotTest {
 
   @Before
   public void setUp() {
-    parkingLot = new ParkingLot(2);
+    parkingLot = new ParkingLot(2, 1234);
   }
 
   @Test
@@ -66,5 +66,10 @@ public class ParkingLotTest {
     parkingLot.park(new Car());
     parkingLot.park(new Car());
     parkingLot.park(new Car());
+  }
+
+  @Test
+  public void shouldReturnReportOfLot() {
+    assertEquals("Lot Id: 1234 Capacity: 2", parkingLot.report());
   }
 }

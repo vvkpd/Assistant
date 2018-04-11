@@ -5,9 +5,11 @@ import java.util.HashMap;
 public class ParkingLot {
   private final HashMap<Object, Vehicle> vehicles;
   private final int capacity;
+  private final int id;
 
-  public ParkingLot(int capacity) {
+  public ParkingLot(int capacity, int id) {
     this.capacity = capacity;
+    this.id = id;
     vehicles = new HashMap<>();
   }
 
@@ -32,5 +34,13 @@ public class ParkingLot {
 
   public boolean isFull() {
     return vehicles.size() == capacity;
+  }
+
+  public String report() {
+    return String.format("Lot Id: %d Capacity: %d",id,capacity);
+  }
+
+  public String toHTML() {
+    return String.format("<tr><td>%d</td><td>%d</td></tr>",id,capacity);
   }
 }
