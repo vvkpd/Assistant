@@ -43,4 +43,17 @@ public class ParkingLot implements Comparable{
     ParkingLot other = (ParkingLot) o;
     return Integer.compare(capacity, other.capacity);
   }
+
+  @Override
+  public String toString() {
+    return "ParkingLot{" +
+        "capacity=" + capacity +
+        '}';
+  }
+
+  public int compareAvailableSpace(ParkingLot other) {
+    int space = capacity - vehicles.size();
+    int spaceInOther = other.capacity - other.vehicles.size();
+    return Integer.compare(space, spaceInOther);
+  }
 }
