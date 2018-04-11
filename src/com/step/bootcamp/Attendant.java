@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Attendant {
   private final ArrayList<ParkingLot> parkingLots;
   private final ArrayList<ParkingLot> availableLots;
-  private final ParkBasedOn parkBasedOn;
+  private final LotSelector parkBasedOn;
 
-  public Attendant(ParkBasedOn parkBasedOn) {
-    this.parkBasedOn = parkBasedOn;
+  public Attendant(LotSelector selector) {
+    this.parkBasedOn = selector;
     parkingLots = new ArrayList<>();
     availableLots = new ArrayList<>();
   }
@@ -22,7 +22,7 @@ public class Attendant {
     if(availableLots.isEmpty())
       throw new CannotParkException("Parking is full");
 
-    ParkingLot lot = parkBasedOn.getLot(availableLots);
+    ParkingLot lot = parkBasedOn.select(availableLots);
     Object token = lot.park(vehicle);
     if(lot.isFull()) availableLots.remove(lot);
     return token;

@@ -11,20 +11,20 @@ public class AttendantTest {
   }
   @Test
   public void shouldBeAbleToParkCar() throws CannotParkException {
-    Attendant attendant = new Attendant(ParkBasedOn.CAPACITY);
+    Attendant attendant = new Attendant(new CapacityBasedSelector());
     attendant.add(new ParkingLot(1));
     assertNotNull(attendant.park(new Car()));
   }
 
   @Test(expected = CannotParkException.class)
   public void shouldBeAbleToParkCarWhenNoLotAreAdded() throws CannotParkException {
-    Attendant attendant = new Attendant(ParkBasedOn.CAPACITY);
+    Attendant attendant = new Attendant(new CapacityBasedSelector());
     assertNotNull(attendant.park(new Car()));
   }
 
   @Test
   public void shouldBeAbleToParkCarWhenOneLotIsFull() throws CannotParkException {
-    Attendant attendant = new Attendant(ParkBasedOn.CAPACITY);
+    Attendant attendant = new Attendant(new CapacityBasedSelector());
     attendant.add(new ParkingLot(1));
     attendant.add(new ParkingLot(1));
     attendant.park(new Car());
@@ -33,7 +33,7 @@ public class AttendantTest {
 
   @Test(expected = CannotParkException.class)
   public void shouldThrowExceptionWhenAllLotsAreFull() throws CannotParkException {
-    Attendant attendant = new Attendant(ParkBasedOn.CAPACITY);
+    Attendant attendant = new Attendant(new CapacityBasedSelector());
     attendant.add(new ParkingLot(1));
     attendant.park(new Car());
     attendant.park(new Car());
@@ -41,7 +41,7 @@ public class AttendantTest {
 
   @Test
   public void shouldCheckoutCar() throws CannotParkException, VehicleNotFoundException {
-    Attendant attendant = new Attendant(ParkBasedOn.CAPACITY);
+    Attendant attendant = new Attendant(new CapacityBasedSelector());
     attendant.add(new ParkingLot(1));
     Car car = new Car();
     Object token = attendant.park(car);
@@ -50,7 +50,7 @@ public class AttendantTest {
 
   @Test
   public void shouldParkCarToHighestCapacityLot() throws CannotParkException, VehicleNotFoundException {
-    Attendant attendant = new Attendant(ParkBasedOn.CAPACITY);
+    Attendant attendant = new Attendant(new CapacityBasedSelector());
     ParkingLot parkingLot3 = new ParkingLot(3);
     attendant.add(parkingLot3);
     attendant.add(new ParkingLot(1));
@@ -70,7 +70,7 @@ public class AttendantTest {
 
   @Test
   public void shouldParkCarToLotHavingHighestSpace() throws CannotParkException, VehicleNotFoundException {
-    Attendant attendant = new Attendant(ParkBasedOn.VACANT_SPACE);
+    Attendant attendant = new Attendant(new VacantSpaceBasedSelector());
 
     ParkingLot parkingLot3 = new ParkingLot(3);
     attendant.add(parkingLot3);
