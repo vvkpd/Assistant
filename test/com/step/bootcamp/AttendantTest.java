@@ -4,6 +4,8 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 public class AttendantTest {
   private class Car implements Vehicle {
@@ -50,16 +52,13 @@ public class AttendantTest {
   @Test
   public void shouldReturnReportOfAttendant() {
     Attendant attendant = new Attendant("Neeraj");
-    Attendant attendant2 = new Attendant("Pragya");
     attendant.add(new ParkingLot(1, 1));
-    attendant.add(new ParkingLot(3, 2));
-    attendant.add(new ParkingLot(5, 3));
-    attendant2.add(new ParkingLot(4, 3));
-    attendant2.add(new ParkingLot(9, 3));
-    System.out.println(attendant.toHTML());
-    assertEquals("Name: Neeraj  Total Lots: 3\n" +
-        "    Lot Id: 1 Capacity: 1\n" +
-        "    Lot Id: 2 Capacity: 3\n" +
-        "    Lot Id: 3 Capacity: 5", attendant.report());
+    attendant.add(new ParkingLot(3, 21));
+    Visitor visitor = mock(Visitor.class);
+    attendant.accept(visitor);
+
+    verify(visitor).visitAttendant("Neeraj", 2);
+    verify(visitor).visitParkingLot(1, 1);
+    verify(visitor).visitParkingLot(21, 3);
   }
 }

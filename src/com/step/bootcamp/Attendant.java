@@ -34,22 +34,10 @@ public class Attendant {
     throw new VehicleNotFoundException();
   }
 
-  public String report() {
-    String report = String.format("Name: %s  Total Lots: %d", name, parkingLots.size());
+  public void accept(Visitor visitor){
+    visitor.visitAttendant(name, parkingLots.size());
     for (ParkingLot parkingLot : parkingLots) {
-      report += String.format("\n    %s", parkingLot.report());
+      parkingLot.accept(visitor);
     }
-    return report;
-  }
-
-  public String toHTML() {
-    String report = String.format("<h2>%s  :- %d</h2>", name, parkingLots.size()) +
-        "<table><thead>" +
-        "<th>Lot ID</th><th>Capacity</th>" +
-        "</thead><tbody>";
-    for (ParkingLot parkingLot : parkingLots) {
-      report += String.format("%s", parkingLot.toHTML());
-    }
-    return report + "</tbody></table>";
   }
 }

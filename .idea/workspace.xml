@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414d8376-6340-4e46-afb5-9bd9feb617b6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/bootcamp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bootcamp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bootcamp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/step/bootcamp/Attendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/bootcamp/Attendant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/step/bootcamp/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/bootcamp/ParkingLot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/step/bootcamp/Reporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/bootcamp/Visitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/step/bootcamp/AttendantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/bootcamp/AttendantTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,53 +32,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Attendant.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Attendant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AttendantTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/AttendantTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+            <state relative-caret-position="645">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reporter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Reporter.java">
+      <file leaf-file-name="HTMLVisitorTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/HTMLVisitorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParkingLotTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParkingLot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/ParkingLot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+            <state relative-caret-position="134">
+              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
               <folding>
-                <element signature="e#1025#1026#0" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
-                <element signature="e#1124#1125#0" expanded="true" />
-                <element signature="e#1203#1204#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Visitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Visitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTMLVisitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/HTMLVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#597#598#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Attendant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Attendant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -94,8 +91,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -123,10 +120,14 @@
         <option value="$PROJECT_DIR$/src/com/step/bootcamp/ParkBasedOn.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotTest.java" />
-        <option value="$PROJECT_DIR$/src/com/step/bootcamp/ParkingLot.java" />
         <option value="$PROJECT_DIR$/src/com/step/bootcamp/Attendant.java" />
+        <option value="$PROJECT_DIR$/src/com/step/bootcamp/ParkingLot.java" />
+        <option value="$PROJECT_DIR$/src/com/step/bootcamp/HTMLReporter.java" />
+        <option value="$PROJECT_DIR$/test/com/step/bootcamp/HTMLReporterTest.java" />
         <option value="$PROJECT_DIR$/test/com/step/bootcamp/AttendantTest.java" />
         <option value="$PROJECT_DIR$/src/com/step/bootcamp/Reporter.java" />
+        <option value="$PROJECT_DIR$/src/com/step/bootcamp/Visitor.java" />
+        <option value="$PROJECT_DIR$/test/com/step/bootcamp/HTMLVisitorTest.java" />
       </list>
     </option>
   </component>
@@ -201,7 +202,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
@@ -226,14 +227,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AttendantTest.shouldReturnReportOfAttendant">
+  <component name="RunManager" selected="JUnit.com.step.bootcamp in bootcamp">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="AttendantTest.shouldBeAbleToParkCarWhenOneLotIsFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AttendantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -245,31 +246,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.step.bootcamp" />
       <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.AttendantTest" />
-      <option name="METHOD_NAME" value="shouldBeAbleToParkCarWhenOneLotIsFull" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="AttendantTest.shouldParkCarToLotHavingHighestSpace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.bootcamp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.step.bootcamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.AttendantTest" />
-      <option name="METHOD_NAME" value="shouldParkCarToLotHavingHighestSpace" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -302,7 +280,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ParkingLotTest.shouldReturnReportOfLot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HTMLVisitorTest.shouldReturnHTMLReport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -313,8 +291,31 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.step.bootcamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldReturnReportOfLot" />
+      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.HTMLVisitorTest" />
+      <option name="METHOD_NAME" value="shouldReturnHTMLReport" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="HTMLVisitorTest.shouldWriteToFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.bootcamp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.step.bootcamp" />
+      <option name="MAIN_CLASS_NAME" value="com.step.bootcamp.HTMLVisitorTest" />
+      <option name="METHOD_NAME" value="shouldWriteToFile" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -397,19 +398,19 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.com.step.bootcamp in bootcamp" />
-      <item itemvalue="JUnit.AttendantTest.shouldBeAbleToParkCarWhenOneLotIsFull" />
-      <item itemvalue="JUnit.AttendantTest.shouldParkCarToLotHavingHighestSpace" />
       <item itemvalue="JUnit.AttendantTest.shouldReturnReportOfAttendant" />
-      <item itemvalue="JUnit.ParkingLotTest.shouldReturnReportOfLot" />
+      <item itemvalue="JUnit.HTMLVisitorTest.shouldReturnHTMLReport" />
+      <item itemvalue="JUnit.AttendantTest" />
+      <item itemvalue="JUnit.HTMLVisitorTest.shouldWriteToFile" />
+      <item itemvalue="JUnit.com.step.bootcamp in bootcamp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AttendantTest.shouldReturnReportOfAttendant" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldReturnReportOfLot" />
-        <item itemvalue="JUnit.AttendantTest.shouldBeAbleToParkCarWhenOneLotIsFull" />
         <item itemvalue="JUnit.com.step.bootcamp in bootcamp" />
-        <item itemvalue="JUnit.AttendantTest.shouldParkCarToLotHavingHighestSpace" />
+        <item itemvalue="JUnit.HTMLVisitorTest.shouldWriteToFile" />
+        <item itemvalue="JUnit.AttendantTest.shouldReturnReportOfAttendant" />
+        <item itemvalue="JUnit.AttendantTest" />
+        <item itemvalue="JUnit.HTMLVisitorTest.shouldReturnHTMLReport" />
       </list>
     </recent_temporary>
   </component>
@@ -420,44 +421,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523265240753</updated>
-      <workItem from="1523265242841" duration="28794000" />
+      <workItem from="1523265242841" duration="31967000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ParkingLotTest_shouldReturnReportOfLot - 2018.04.11 at 17h 18m 54s.xml">
-      <configuration name="ParkingLotTest.shouldReturnReportOfLot" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParkingLotTest_shouldReturnReportOfLot - 2018.04.11 at 17h 19m 13s.xml">
-      <configuration name="ParkingLotTest.shouldReturnReportOfLot" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AttendantTest_shouldReturnReportOfAttendant - 2018.04.11 at 17h 46m 48s.xml">
+    <history-entry file="AttendantTest_shouldReturnReportOfAttendant - 2018.04.12 at 10h 52m 34s.xml">
       <configuration name="AttendantTest.shouldReturnReportOfAttendant" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AttendantTest_shouldReturnReportOfAttendant - 2018.04.11 at 17h 46m 57s.xml">
+    <history-entry file="HTMLReporterTest_shouldReturnHTMLReport - 2018.04.12 at 10h 55m 56s.xml">
+      <configuration name="HTMLReporterTest.shouldReturnHTMLReport" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HTMLReporterTest_shouldReturnHTMLReport - 2018.04.12 at 10h 57m 47s.xml">
+      <configuration name="HTMLReporterTest.shouldReturnHTMLReport" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HTMLReporterTest_shouldReturnHTMLReport - 2018.04.12 at 10h 58m 39s.xml">
+      <configuration name="HTMLReporterTest.shouldReturnHTMLReport" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AttendantTest - 2018.04.12 at 11h 03m 29s.xml">
+      <configuration name="AttendantTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AttendantTest_shouldReturnReportOfAttendant - 2018.04.12 at 11h 03m 32s.xml">
       <configuration name="AttendantTest.shouldReturnReportOfAttendant" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AttendantTest_shouldReturnReportOfAttendant - 2018.04.11 at 17h 48m 58s.xml">
+    <history-entry file="AttendantTest_shouldReturnReportOfAttendant - 2018.04.12 at 11h 07m 16s.xml">
       <configuration name="AttendantTest.shouldReturnReportOfAttendant" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AttendantTest_shouldReturnReportOfAttendant - 2018.04.11 at 17h 52m 46s.xml">
-      <configuration name="AttendantTest.shouldReturnReportOfAttendant" configurationId="JUnit" />
+    <history-entry file="HTMLReporterTest_shouldWriteToFile - 2018.04.12 at 11h 14m 59s.xml">
+      <configuration name="HTMLReporterTest.shouldWriteToFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AttendantTest_shouldReturnReportOfAttendant - 2018.04.11 at 17h 53m 06s.xml">
-      <configuration name="AttendantTest.shouldReturnReportOfAttendant" configurationId="JUnit" />
+    <history-entry file="HTMLReporterTest_shouldWriteToFile - 2018.04.12 at 11h 15m 41s.xml">
+      <configuration name="HTMLReporterTest.shouldWriteToFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AttendantTest_shouldReturnReportOfAttendant - 2018.04.11 at 18h 01m 29s.xml">
-      <configuration name="AttendantTest.shouldReturnReportOfAttendant" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AttendantTest_shouldReturnReportOfAttendant - 2018.04.11 at 18h 03m 57s.xml">
-      <configuration name="AttendantTest.shouldReturnReportOfAttendant" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AttendantTest_shouldReturnReportOfAttendant - 2018.04.11 at 18h 05m 13s.xml">
-      <configuration name="AttendantTest.shouldReturnReportOfAttendant" configurationId="JUnit" />
+    <history-entry file="com_step_bootcamp_in_bootcamp - 2018.04.12 at 11h 45m 16s.xml">
+      <configuration name="com.step.bootcamp in bootcamp" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28794000" />
+    <option name="totallyTimeSpent" value="31967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="976" extended-state="0" />
@@ -472,11 +473,11 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="right" id="REPL" side_tool="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32992035" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32992035" />
       <window_info anchor="right" id="Leiningen" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17521368" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17521368" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32992035" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -551,20 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/LotSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/CapacityBasedSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/VacantSpaceBasedSelector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -625,44 +612,78 @@
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/LotSelector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+        <state relative-caret-position="85">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/CapacityBasedSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/ParkingLot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+        <state relative-caret-position="457">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
           <folding>
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/ParkingLotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Attendant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        <state relative-caret-position="474">
+          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/AttendantTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+        <state relative-caret-position="645">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Reporter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/HTMLVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="221">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootcamp/Visitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/step/bootcamp/HTMLVisitorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -723,7 +744,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

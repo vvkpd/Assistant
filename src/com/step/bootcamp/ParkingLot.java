@@ -43,4 +43,8 @@ public class ParkingLot {
   public String toHTML() {
     return String.format("<tr><td>%d</td><td>%d</td></tr>",id,capacity);
   }
+
+  public void accept(Visitor visitor) {
+    visitor.visitParkingLot(id, capacity);
+  }
 }
