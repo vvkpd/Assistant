@@ -12,6 +12,7 @@ public class HTMLVisitor implements Visitor {
 
   @Override
   public void visitAttendant(String name, int noOfLots) {
+    if(!report.equals("")) report+="</tbody></table><br><br>";
     report += String.format("<h2>%s  :- %d</h2>", name, noOfLots)+
         "<table><thead>" +
         "<th>Lot ID</th><th>Capacity</th>" +

@@ -2,7 +2,7 @@ package com.step.bootcamp;
 
 import java.util.ArrayList;
 
-public class Attendant {
+public class Attendant implements Visitable{
   private final ArrayList<ParkingLot> parkingLots;
   private final String name;
 
@@ -11,8 +11,9 @@ public class Attendant {
     parkingLots = new ArrayList<>();
   }
 
-  public void add(ParkingLot parkingLot) {
+  public Attendant add(ParkingLot parkingLot) {
     parkingLots.add(parkingLot);
+    return this;
   }
 
   public Object park(Vehicle vehicle) throws CannotParkException {
@@ -34,10 +35,9 @@ public class Attendant {
     throw new VehicleNotFoundException();
   }
 
+  @Override
   public void accept(Visitor visitor){
     visitor.visitAttendant(name, parkingLots.size());
-    for (ParkingLot parkingLot : parkingLots) {
-      parkingLot.accept(visitor);
-    }
+    parkingLots.forEach(parkingLot->parkingLot.accept(visitor));
   }
 }

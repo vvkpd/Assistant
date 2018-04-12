@@ -36,14 +36,6 @@ public class ParkingLot {
     return vehicles.size() == capacity;
   }
 
-  public String report() {
-    return String.format("Lot Id: %d Capacity: %d",id,capacity);
-  }
-
-  public String toHTML() {
-    return String.format("<tr><td>%d</td><td>%d</td></tr>",id,capacity);
-  }
-
   public void accept(Visitor visitor) {
     visitor.visitParkingLot(id, capacity);
   }

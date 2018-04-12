@@ -67,9 +67,4 @@ public class ParkingLotTest {
     parkingLot.park(new Car());
     parkingLot.park(new Car());
   }
-
-  @Test
-  public void shouldReturnReportOfLot() {
-    assertEquals("Lot Id: 1234 Capacity: 2", parkingLot.report());
-  }
 }
