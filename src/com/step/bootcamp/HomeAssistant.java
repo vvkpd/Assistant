@@ -1,37 +1,36 @@
 package com.step.bootcamp;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class HomeAssistant {
-  private final HashMap<String, Action> actions;
+  private final HashMap<String, Action> commands;
+  private ArrayList<Action> previousCommands;
 
   public HomeAssistant() {
-    this.actions = new HashMap<>();
-  }
-
-  public HomeAssistant add(Light light){
-    actions.put("turn on", ()->light.turnOn());
-    actions.put("turn off", ()->light.turnOff());
-    return this;
-  }
-
-  public HomeAssistant add(CircularLight light){
-    actions.put("circular light on", ()->light.switchOn());
-    actions.put("circular light off", ()->light.switchOff());
-    return this;
-  }
-
-  public HomeAssistant add(HomeTheater homeTheater){
-    actions.put("music on", ()->homeTheater.on());
-    actions.put("music off", ()->homeTheater.off());
-    actions.put("play music", ()->homeTheater.play());
-    return this;
+    this.commands = new HashMap<>();
+    this.previousCommands = new ArrayList<>();
   }
 
   public void listen(String instruction){
     instruction = instruction.toLowerCase().trim();
-    Action action = actions.get(instruction);
-    new StringBuilder()
-    action.execute();
+    Action action = commands.get(instruction);
+    executePreviousCommand(instruction);
+    if(action != null) {
+      action.execute();
+      previousCommands.add(0,action.undo());
+    }
+  }
+
+  private void executePreviousCommand(String instruction) {
+    if(instruction.equals("undo") && !previousCommands.isEmpty()) {
+      previousCommands.get(0).execute();
+      previousCommands.remove(0);
+    }
+  }
+
+  public void addCommand(String command, Action action) {
+    command = command.toLowerCase().trim();
+    commands.put(command,action);
   }
 }
